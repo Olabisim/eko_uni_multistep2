@@ -17,16 +17,19 @@ body
      /* background-color: green;
      clip-path: polygon(100% 35%, 100% 100%, 0 62%, 0 0); */
     /* background: lavender; */
-    /* background-image: url('/img/undraw_Safe_re_kiil.png');
+    background-image: url('/img/undraw_Safe_re_kiil.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 40%;
-    background-attachment: fixed; */
+    background-attachment: fixed; 
 }
 
  .card {
+     border: 2px solid #17A43B;
      /* background: rgba(255, 255, 255, 0.7); */
-    background: url('/img/undraw_Jogging_t14q.svg'), rgba(255, 255, 255, 0.8);
+    background: 
+                /* url('/img/undraw_Jogging_t14q.svg'),  */
+                rgba(255, 255, 255, 0.8);
     /* background-image: url('/img/undraw_Jogging_t14q.svg'); */
     /* clip-path: polygon(100% 35%, 100% 100%, 0 62%, 0 0); */
       padding: 30px !important;

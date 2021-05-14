@@ -21,7 +21,7 @@ $(document).ready(function(){
   
   $(".next").click(function(){
   
-  // var fields = section.find(":input");
+  var fields = section.find(":input");
 
   //   var me = document.querySelector("input");;
 
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
   // console.log("this are the fields or inputs" + fields)
 
-  // if (fields.valid()){
+  if (fields.valid()){
 
     current_fs = $(this).parent();
     next_fs = $(this).parent().next();
@@ -56,7 +56,7 @@ $(document).ready(function(){
     });
     setProgressBar(++current);
     
-  // }
+  }
   });
   
   $(".previous").click(function(){
