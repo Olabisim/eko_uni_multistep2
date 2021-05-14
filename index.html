@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="/index.css">
-    <title>Document</title>
+    <title>Eko University</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -49,34 +49,47 @@
 
 
                                 <label class="fieldlabels">Surname: *</label> 
-                                <input type="text" id="psurname" name="surname" placeholder="..." minlength="3" required/> 
+                                <input type="text" id="surname" name="surname" placeholder="..." minlength="3" required/> 
+
                                 <label class="fieldlabels">Firstname: *</label> 
-                                <input type="text" name="firstname" placeholder="..." minlength="3" required/> 
+                                <input type="text" id="firstname" name="firstname" placeholder="..." minlength="3" required/> 
+
                                 <label class="fieldlabels">Lastname: *</label> 
-                                <input type="text" name="Lastname" placeholder="..." minlength="3" required/> 
+                                <input type="text" id="lastname" name="Lastname" placeholder="..." minlength="3" required/> 
+
                                 <label class="fieldlabels">Email: *</label> 
-                                <input type="email" name="email" placeholder="Email Address" required/> 
+                                <input type="email" id="email" name="email" placeholder="Email Address" required/> 
+
                                 <label class="fieldlabels">Contact No.: *</label> 
-                                <input type="number" name="phone" placeholder="Contact No." minlength="9" required/> 
+                                <input type="number" id="contact" name="phone" placeholder="Contact No." minlength="9" required/> 
+
                                 <label class="fieldlabels">Alternate Contact No.: </label> 
-                                <input type="number" name="phno_2" placeholder="Alternate Contact No." minlength="9"/>
+                                <input type="number" id="alt_contact" name="phno_2" placeholder="Alternate Contact No." minlength="9"/>
+
                                 <label class="fieldlabels">Select Mode: *</label> 
-                                <select class="form-input" name="fselect" required>
+                                <select class="form-input" id="fir_select" name="fselect" required>
                                     
-                                    <option value=''>Select ...</option>
+                                    <option value=''></option>
                                     <option value='UTME'>UTME</option>
                                     <option value='DIR_ENT'>Direct Entry</option>
+
                                 </select>
+
                                 <label class="fieldlabels">Select Choice: *</label> 
-                                <select class="form-input" name="sselect" required>
-                                    <option value=''>Select ...</option>
-                                    <option>First</option>
-                                    <option>Other</option>
+                                <select class="form-input" id="sec_select" name="sselect" required>
+
+                                    <option value=''></option>
+                                    <option value='First'>First</option>
+                                    <option value='Other'>Other</option>
+
                                 </select>
+
                                 <label class="fieldlabels">UTME/DE REG.NO: *</label> 
-                                <input type="text" name="UTME" placeholder="..." minlength="8" required/> 
+                                <input type="text" id="UTME" name="UTME" placeholder="..." minlength="8" required/> 
+                                
                                 <label class="fieldlabels">Password: *</label> 
                                 <input type="password" name="pwd" placeholder="Password" minlength="5" id="pwd" required/> 
+
                                 <label class="fieldlabels">Confirm Password: *</label> 
                                 <input type="password" name="cpwd" placeholder="Confirm Password" minlength="5" id="cpwd" required/>
                                 <div class="registrationFormAlert" id="CheckPasswordMatch"></div>
@@ -99,39 +112,35 @@
                                 </div> 
 
 
-                                <label class="fieldlabels">Surname: *</label> 
-                                <h4 id="psurname"></h4>
-                                <label class="fieldlabels">Firstname: *</label> 
-                                <!-- <input type="text" name="firstname" placeholder="..." minlength="3" required/>  -->
-                                <label class="fieldlabels">Lastname: *</label> 
-                                <!-- <input type="text" name="Lastname" placeholder="..." minlength="3" required/>  -->
-                                <label class="fieldlabels">Email: *</label> 
-                                <!-- <input type="email" name="email" placeholder="Email Address" required/>  -->
-                                <label class="fieldlabels">Contact No.: *</label> 
-                                <!-- <input type="number" name="phone" placeholder="Contact No." minlength="9" required/>  -->
+                                <label class="fieldlabels">Surname: </label> 
+                                <h4 id="p2surname"></h4>
+                                <label class="fieldlabels">Firstname: </label> 
+                                <h4 id="p2firstname"></h4>
+                                <label class="fieldlabels">Lastname: </label> 
+                                <h4 id="p2lastname"></h4>
+                                <label class="fieldlabels">Email: </label> 
+                                <h4 id="p2email"></h4>
+                                <label class="fieldlabels">Contact No.: </label> 
+                                <h4 id="p2contact"></h4>
                                 <label class="fieldlabels">Alternate Contact No.: </label> 
-                                <!-- <input type="number" name="phno_2" placeholder="Alternate Contact No." /> -->
-                                <label class="fieldlabels">Select Mode: *</label> 
+                                <h4 id="p2alt_contact"></h4>
+                                <label class="fieldlabels">Select Mode: </label> 
+                                <h4 id="p2fir_select"></h4>
                                 <!-- <select class="form-input" name="fselect" required>
                                     
                                     <option value=''>Select ...</option>
                                     <option value='UTME'>UTME</option>
                                     <option value='DIR_ENT'>Direct Entry</option>
                                 </select> -->
-                                <label class="fieldlabels">Select Choice: *</label> 
+                                <label class="fieldlabels">Select Choice: </label> 
+                                <h4 id="p2sec_select"></h4>
                                 <!-- <select class="form-input" name="sselect" required>
                                     <option value=''>Select ...</option>
                                     <option>First</option>
                                     <option>Other</option>
                                 </select> -->
-                                <label class="fieldlabels">UTME/DE REG.NO: *</label> 
-                                <!-- <input type="text" name="UTME" placeholder="..." minlength="8" required/>  -->
-                                <label class="fieldlabels">Password: *</label> 
-                                <!-- <input type="password" name="pwd" placeholder="Password" minlength="5" id="pwd" required/>  -->
-                                <label class="fieldlabels">Confirm Password: *</label> 
-                                <!-- <input type="password" name="cpwd" placeholder="Confirm Password" minlength="5" id="cpwd" required/> -->
-                                <!-- <div class="registrationFormAlert" id="CheckPasswordMatch"></div> -->
-
+                                <label class="fieldlabels">UTME/DE REG.NO: </label> 
+                                <h4 id="p2UTME"></h4>
 
                             </div> 
 
@@ -189,18 +198,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <script src="/index.js"></script>
+    <script src="/preview.js"></script>
     <script>
         
         var d = new Date();
         var n = `${d.getFullYear() - 1}/${d.getFullYear()}` ;
         document.getElementById("application_date").innerHTML = n;
 
-        
-        // var psurname = 'testing';
-        var psurname = $("#psurname").val();
-        console.log('this is the psurname' + psurname)
-        document.getElementById("psurname").innerHTML = psurname;
-
+    
 
         function checkPasswordMatch() {
             var password = $("#pwd").val();

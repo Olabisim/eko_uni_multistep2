@@ -279,7 +279,8 @@ label.error {
     color: red;
     font-size: 1rem;
     display: block;
-    margin-top: 5px;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 input.error {
@@ -290,4 +291,12 @@ input.error {
 
 #CheckPasswordMatch.registrationFormAlert {
    font-weight: 700;
+}
+
+h4 {
+    text-transform: capitalize;
+    border-bottom: 1px solid #17A43B;
+    padding: 5px;
+    margin: 5px;
+    /* display: inline; */
 }
