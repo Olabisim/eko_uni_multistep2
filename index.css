@@ -19,7 +19,7 @@ body
     /* background: lavender; */
     background-image: url('/img/undraw_Safe_re_kiil.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: 100% 40%;
     background-attachment: fixed; 
 }
@@ -283,7 +283,7 @@ label.error {
 }
 
 input.error {
-    border: 1px dashed red;
+    border: 1px dashed red !important;
     font-weight: 300;
     color: red;
 }

@@ -23,6 +23,7 @@
                     <h2 id="heading">ENTRANCE APPLICATION</h2>
                     <p>Welcome to the University Undergraduate Applications Portal. Go through the following instructions before you continue filling the application form.</p>
                     <form id="msform">
+
                         <!-- progressbar -->
                         <ul id="progressbar">
                             <li class="active" id="account"><strong>Account</strong></li>
@@ -43,33 +44,46 @@
                                         <h2 class="steps">Step 1 - 4</h2>
                                     </div>
                                 </div> 
+
+
+
+
                                 <label class="fieldlabels">Surname: *</label> 
-                                <input type="text" name="surname" placeholder="..." minlength="3" required/> 
+                                <input type="text" id="psurname" name="surname" placeholder="..." minlength="3" required/> 
                                 <label class="fieldlabels">Firstname: *</label> 
                                 <input type="text" name="firstname" placeholder="..." minlength="3" required/> 
                                 <label class="fieldlabels">Lastname: *</label> 
                                 <input type="text" name="Lastname" placeholder="..." minlength="3" required/> 
                                 <label class="fieldlabels">Email: *</label> 
                                 <input type="email" name="email" placeholder="Email Address" required/> 
+                                <label class="fieldlabels">Contact No.: *</label> 
+                                <input type="text" name="phone" placeholder="Contact No." minlength="3" required/> 
+                                <label class="fieldlabels">Alternate Contact No.: </label> 
+                                <input type="text" name="phno_2" placeholder="Alternate Contact No." />
                                 <label class="fieldlabels">Select Mode: *</label> 
-                                <select class="form-input">
+                                <select class="form-input" name="fselect" required>
                                     
                                     <option value=''>Select ...</option>
                                     <option value='UTME'>UTME</option>
                                     <option value='DIR_ENT'>Direct Entry</option>
                                 </select>
                                 <label class="fieldlabels">Select Choice: *</label> 
-                                <select class="form-input">
+                                <select class="form-input" name="sselect" required>
+                                    <option value=''>Select ...</option>
                                     <option>First</option>
                                     <option>Other</option>
                                 </select>
                                 <label class="fieldlabels">UTME/DE REG.NO: *</label> 
                                 <input type="text" name="UTME" placeholder="..." minlength="8" required/> 
                                 <label class="fieldlabels">Password: *</label> 
-                                <input type="password" name="pwd" placeholder="Password" id="pwd"/> 
+                                <input type="password" name="pwd" placeholder="Password" minlength="5" id="pwd" required/> 
                                 <label class="fieldlabels">Confirm Password: *</label> 
-                                <input type="password" name="cpwd" placeholder="Confirm Password" id="cpwd"/>
+                                <input type="password" name="cpwd" placeholder="Confirm Password" minlength="5" id="cpwd" required/>
                                 <div class="registrationFormAlert" id="CheckPasswordMatch"></div>
+
+
+
+
                             </div> 
                             <input type="button" name="next" class="next action-button" value="Next" />
                         </fieldset>
@@ -77,13 +91,53 @@
                             <div class="form-card">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h2 class="fs-title">Personal Information:</h2>
+                                        <h2 class="fs-title">Preview:</h2>
                                     </div>
                                     <div class="col-5">
                                         <h2 class="steps">Step 2 - 4</h2>
                                     </div>
-                                </div> <label class="fieldlabels">First Name: *</label> <input type="text" name="fname" placeholder="First Name" /> <label class="fieldlabels">Last Name: *</label> <input type="text" name="lname" placeholder="Last Name" /> <label class="fieldlabels">Contact No.: *</label> <input type="text" name="phno" placeholder="Contact No." /> <label class="fieldlabels">Alternate Contact No.: *</label> <input type="text" name="phno_2" placeholder="Alternate Contact No." />
-                            </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                </div> 
+
+
+                                <label class="fieldlabels">Surname: *</label> 
+                                <h4 id="psurname"></h4>
+                                <label class="fieldlabels">Firstname: *</label> 
+                                <input type="text" name="firstname" placeholder="..." minlength="3" required/> 
+                                <label class="fieldlabels">Lastname: *</label> 
+                                <input type="text" name="Lastname" placeholder="..." minlength="3" required/> 
+                                <label class="fieldlabels">Email: *</label> 
+                                <input type="email" name="email" placeholder="Email Address" required/> 
+                                <label class="fieldlabels">Contact No.: *</label> 
+                                <input type="text" name="phone" placeholder="Contact No." minlength="3" required/> 
+                                <label class="fieldlabels">Alternate Contact No.: </label> 
+                                <input type="text" name="phno_2" placeholder="Alternate Contact No." />
+                                <label class="fieldlabels">Select Mode: *</label> 
+                                <select class="form-input" name="fselect" required>
+                                    
+                                    <option value=''>Select ...</option>
+                                    <option value='UTME'>UTME</option>
+                                    <option value='DIR_ENT'>Direct Entry</option>
+                                </select>
+                                <label class="fieldlabels">Select Choice: *</label> 
+                                <select class="form-input" name="sselect" required>
+                                    <option value=''>Select ...</option>
+                                    <option>First</option>
+                                    <option>Other</option>
+                                </select>
+                                <label class="fieldlabels">UTME/DE REG.NO: *</label> 
+                                <input type="text" name="UTME" placeholder="..." minlength="8" required/> 
+                                <label class="fieldlabels">Password: *</label> 
+                                <input type="password" name="pwd" placeholder="Password" minlength="5" id="pwd" required/> 
+                                <label class="fieldlabels">Confirm Password: *</label> 
+                                <input type="password" name="cpwd" placeholder="Confirm Password" minlength="5" id="cpwd" required/>
+                                <div class="registrationFormAlert" id="CheckPasswordMatch"></div>
+
+
+                            </div> 
+
+                            <input type="button" name="next" class="next action-button" value="Next" /> 
+                            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+
                         </fieldset>
                         <fieldset>
                             <div class="form-card">
@@ -141,18 +195,26 @@
         var n = `${d.getFullYear() - 1}/${d.getFullYear()}` ;
         document.getElementById("application_date").innerHTML = n;
 
+        
+        // var psurname = 'testing';
+        var psurname = $("#psurname").val();
+        console.log('this is the psurname' + psurname)
+        document.getElementById("psurname").innerHTML = psurname;
+
 
         function checkPasswordMatch() {
-        var password = $("#pwd").val();
-        var confirmPassword = $("#cpwd").val();
-        if (password != confirmPassword)
-            $("#CheckPasswordMatch").html("Passwords does not match!").css("color", "red");
-        else
-            $("#CheckPasswordMatch").html("Passwords match.").css("color", "green");
+            var password = $("#pwd").val();
+            var confirmPassword = $("#cpwd").val();
+            if (password != confirmPassword)
+                $("#CheckPasswordMatch").html("Passwords does not match!").css({"color": "red"});
+            else
+                $("#CheckPasswordMatch").html("Passwords match.").css("color", "green");
         }
+
         $(document).ready(function () {
-        $("#cpwd").keyup(checkPasswordMatch);
+            $("#cpwd").keyup(checkPasswordMatch);
         });
+
     </script>
     
 </body>
