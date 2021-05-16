@@ -184,6 +184,12 @@ img {
     color: black;
     font-weight: 600;
     text-align: left;
+    margin-top: 1.5em;
+}
+
+.fieldlabels.extra {
+    margin-top: 2.5em;
+    margin-bottom: -1em;
 }
 
 #progressbar {

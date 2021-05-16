@@ -112,37 +112,12 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// for select option
 
 
 
 function setPfir_select() {
-    
+            
     var fir_select = $("#fir_select").val();
     console.log("this is the fir_select: " + fir_select)
     const p2fir_select = document.querySelector('#p2fir_select');
@@ -151,10 +126,8 @@ function setPfir_select() {
 }
 
 $(document).ready(function () {
-    $("#fir_select").keyup(setPfir_select);
+    $("#fir_select").change(setPfir_select);
 });
-
-
 
 
 function setPsec_select() {
@@ -167,5 +140,7 @@ function setPsec_select() {
 }
 
 $(document).ready(function () {
-    $("#sec_select").keyup(setPsec_select);
+    $("#sec_select").change(setPsec_select);
 });
+
+
